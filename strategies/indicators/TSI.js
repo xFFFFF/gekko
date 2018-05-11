@@ -9,6 +9,7 @@ var Indicator = function(settings) {
   this.outer = new EMA(settings.short);
   this.absoluteInner = new EMA(settings.long);
   this.absoluteOuter = new EMA(settings.short);
+  this.result = false;
 }
 
 Indicator.prototype.update = function(candle) {
@@ -33,6 +34,8 @@ Indicator.prototype.update = function(candle) {
   this.tsi = 100 * this.outer.result / this.absoluteOuter.result;
 
   this.lastClose = close;
+
+  this.result = this.tsi;
 }
 
 module.exports = Indicator;

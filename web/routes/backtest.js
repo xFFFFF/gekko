@@ -38,7 +38,9 @@ module.exports = function *() {
   if(!req.data.trades)
     delete result.trades;
 
-  // todo: indicatorResults
+  // delete indicatorResults if not present on body
+  if(!req.data.indicatorResults)
+    delete result.indicatorResults;
 
   result.candles = _.map(
     result.candles,

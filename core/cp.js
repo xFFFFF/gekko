@@ -79,6 +79,13 @@ var cp = {
   //   profit: -0.2320439659276161,
   // }
   roundtrip: roundtrip => message('roundtrip', { roundtrip }),
+  // object like:
+  // {
+  //  name: 'macd',
+  //  date: Moment<'2018-05-06 20:00:00'>,
+  //  result: 1.234
+  //}
+  indicatorResult: indicatorResult => message('indicatorResult', { indicatorResult }),
 }
 
 if(ENV !== 'child-process') {

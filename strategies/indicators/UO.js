@@ -14,6 +14,7 @@ var Indicator = function(settings) {
   this.secondHigh = new SMA(settings.second.period);
   this.thirdLow = new SMA(settings.third.period);
   this.thirdHigh = new SMA(settings.third.period);
+  this.result = false;
 }
 
 Indicator.prototype.update = function(candle) {
@@ -40,6 +41,8 @@ Indicator.prototype.update = function(candle) {
   this.uo = 100 * (this.firstWeight * first + this.secondWeight * second + this.thirdWeight * third) / (this.firstWeight + this.secondWeight + this.thirdWeight);
 
   this.lastClose = close;
+
+  this.result = this.uo;
 }
 
 module.exports = Indicator;

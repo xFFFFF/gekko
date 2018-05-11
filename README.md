@@ -1,4 +1,17 @@
-# Gekko [![npm](https://img.shields.io/npm/dm/gekko.svg)]() [![Build Status](https://travis-ci.org/askmike/gekko.png)](https://travis-ci.org/askmike/gekko) [![Build status](https://ci.appveyor.com/api/projects/status/github/askmike/gekko?branch=stable&svg=true)](https://ci.appveyor.com/project/askmike/gekko)
+# Gekko "Indicator" + "Quasar UI" Fork
+
+This is a fork that is able to display indicator-results (native, tulip, talib) in charts @ the Gekko backtest page.
+Basically it's simply my gekko-quasar-ui project and a pimped version of gekko with a few fixes that can send Indicator results via http-request.
+
+It's still buggy as hell but hopefully it's useful despite that fact. ;)
+
+If you like this, please feel free to tip @ 191hR9AftcrGH2Vb29ogPBoUjFowsvAMrk (BTC) ...
+
+The VueJS-UI (based on Quasar UI Framework) project for this can be obtained here: [Gekko trading bot fork](https://github.com/h256/gekko-quasar-ui)
+
+### Original Readme:
+
+# Gekko 
 
 ![Gordon Gekko](http://mikevanrossum.nl/static/gekko.jpg)
 
@@ -20,7 +33,7 @@ See [the installing Gekko doc](https://gekko.wizb.it/docs/installation/installin
 
 ## Community & Support
 
-Gekko has [a forum](https://forum.gekko.wizb.it/) that is the place for discussions on using Gekko, automated trading and exchanges. In case you rather want to chat in realtime about Gekko feel free to join the [Gekko Support Discord](https://discord.gg/26wMygt).
+Gekko has [a forum](https://forum.gekko.wizb.it/) that is the place for discussions on using Gekko, autometed trading and exchanges. In case you rather want to chat in realtime about Gekko feel free to join the [Gekko Support Discord](https://discord.gg/26wMygt).
 
 ## Final
 

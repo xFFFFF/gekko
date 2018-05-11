@@ -7,3 +7,6 @@ weightHigh = -120
 # How many candle intervals should a trend persist
 # before we consider it real?
 persistence = 0
+
+#  fix missing short message
+short = 1000000
